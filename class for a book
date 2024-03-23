@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+
+class Book {
+private:
+    std::string title;
+    std::string author;
+    int year;
+
+public:
+    // Constructor
+    Book(const std::string& bookTitle, const std::string& bookAuthor, int publicationYear)
+        : title(bookTitle), author(bookAuthor), year(publicationYear) {
+        std::cout << "A book object has been created." << std::endl;
+    }
+
+    // Destructor
+    ~Book() {
+        std::cout << "A book object is being destroyed." << std::endl;
+    }
+
+    // Function to display book information
+    void displayInfo() const {
+        std::cout << "Book: " << title << " by " << author << " (" << year << ")" << std::endl;
+    }
+};
+
+int main() {
+    // Creating a book object
+    Book myBook("The Great Gatsby", "F. Scott Fitzgerald", 1925);
+
+    // Displaying book information
+    myBook.displayInfo();
+
+    return 0;
+}
