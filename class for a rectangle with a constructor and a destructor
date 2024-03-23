@@ -1,0 +1,43 @@
+#include <iostream>
+
+class Rectangle {
+private:
+    double length;
+    double width;
+
+public:
+    // Constructor
+    Rectangle(double len, double wid) : length(len), width(wid) {
+        std::cout << "A rectangle object has been created." << std::endl;
+    }
+
+    // Destructor
+    ~Rectangle() {
+        std::cout << "A rectangle object is being destroyed." << std::endl;
+    }
+
+    // Function to calculate area
+    double calculateArea() const {
+        return length * width;
+    }
+
+    // Function to calculate perimeter
+    double calculatePerimeter() const {
+        return 2 * (length + width);
+    }
+};
+
+int main() {
+    // Creating a rectangle object
+    Rectangle myRectangle(5.0, 3.0);
+
+    // Calculating area and perimeter
+    double area = myRectangle.calculateArea();
+    double perimeter = myRectangle.calculatePerimeter();
+
+    // Displaying results
+    std::cout << "Area of the rectangle: " << area << std::endl;
+    std::cout << "Perimeter of the rectangle: " << perimeter << std::endl;
+
+    return 0;
+}
