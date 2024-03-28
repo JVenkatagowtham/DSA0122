@@ -1,0 +1,82 @@
+1
+{
+  "name": "John Doe",
+  "age": 30,
+  "designation": "Software Engineer",
+  "salary": 60000
+}
+
+
+2
+let employee = {
+  name: "John Doe",
+  age: 30,
+  designation: "Software Engineer",
+  salary: 60000
+};
+
+3
+{
+  "name": "Jane Smith",
+  "age": 35,
+  "subject": "Mathematics",
+  "experience": 10
+}
+
+4
+let teacher = {
+  name: "Jane Smith",
+  age: 35,
+  subject: "Mathematics",
+  experience: 10
+};
+
+5
+{
+  "make": "Toyota",
+  "model": "Camry",
+  "year": 2022,
+  "color": "Silver"
+}
+
+6
+let car = {
+  make: "Toyota",
+  model: "Camry",
+  year: 2022,
+  color: "Silver"
+};
+
+7
+class Company {
+public:
+    string name;
+    string location;
+    int numEmployees;
+};
+
+int main() {
+    Company myCompany;
+    myCompany.name = "ABC Inc.";
+    myCompany.location = "New York";
+    myCompany.numEmployees = 100;
+    return 0;
+}
+
+8
+class Vehicle {
+public:
+    string make;
+    string model;
+    int year;
+    string color;
+};
+
+int main() {
+    Vehicle myCar;
+    myCar.make = "Toyota";
+    myCar.model = "Camry";
+    myCar.year = 2022;
+    myCar.color = "Silver";
+    return 0;
+}
